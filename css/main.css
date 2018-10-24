@@ -4,11 +4,29 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 
 #right-eye {
-  animation: move 2s linear infinite;
+  animation: move 3s linear infinite;
 }
 
 #left-eye {
-  animation: move 2s linear infinite;
+  animation: move 3s linear infinite;
+}
+
+.bear-face:hover #right-ear {
+  transform: translate(0, -10px);
+}
+
+#right-ear {
+  transform: translate(0, 0);
+  transition: all 500ms ease-in-out;
+}
+
+.bear-face:hover #left-ear {
+  transform: translate(0, -10px);
+}
+
+#left-ear {
+  transform: translate(0, 0);
+  transition: all 500ms ease-in-out;
 }
 
 @keyframes move {
